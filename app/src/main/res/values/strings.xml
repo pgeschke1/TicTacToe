@@ -7,4 +7,6 @@
     <string name="txtPlayerOne">Player 1</string>
     <string name="txtPlayerTwo">Player 2</string>
     <string name="txtTie">Tie</string>
+    <string name="txtBackgroundColor">Background Color</string>
+    <string name="txtTextColor">Text Color</string>
 </resources>

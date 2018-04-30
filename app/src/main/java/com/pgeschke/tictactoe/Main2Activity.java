@@ -1,5 +1,6 @@
 package com.pgeschke.tictactoe;
 
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +9,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class Main2Activity extends AppCompatActivity{
+
+    ConstraintLayout background2;
+
     boolean Player_1 = true;
 
     Button btn_1_1;
@@ -41,6 +45,9 @@ public class Main2Activity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
+        background2 = (ConstraintLayout)findViewById(R.id.activity_2_main);
+        background2.setBackgroundColor(getResources().getColor(R.color.colorBackground));
 
         setScore();
 

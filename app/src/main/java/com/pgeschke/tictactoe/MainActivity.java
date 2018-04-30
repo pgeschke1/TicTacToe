@@ -13,6 +13,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
         Button buttonOnePlayer = (Button)findViewById(R.id.btnOnePlayer);
         Button buttonTwoPlayer = (Button)findViewById(R.id.btnTwoPlayer);
         Button buttonSettings = (Button)findViewById(R.id.btnSettings);
@@ -26,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         buttonTwoPlayer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                    startActivity(new Intent(MainActivity.this, Main2Activity.class));
+                startActivity(new Intent(MainActivity.this, Main2Activity.class));
 
 
             }
@@ -34,9 +37,7 @@ public class MainActivity extends AppCompatActivity {
         buttonSettings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Not Implemented yet.",
-                        Toast.LENGTH_LONG).show();
-            //    startActivity(new Intent(MainActivity.this, Main3Activity.class));
+                startActivity(new Intent(MainActivity.this, Main3Activity.class));
             }
         });
     }
